@@ -7,7 +7,8 @@ This project focuses on the semantic segmentation of urban areas using high-reso
 ### Data and Methodology
 The project leverages two main datasets: high-resolution aerial images and urban atlas masks. Prior to training, the datasets were preprocessed by resizing and extracting image patches. A colormap was applied to the grayscale masks to visualize different urban zones, and the masks were converted to a categorical format suitable for model training. The data was split into 80% training and 20% testing sets.
 
-Two U-Net models were implemented: a custom model and a ResNet34-based model, both following an encoder-decoder architecture with skip connections. The models were trained using the Adam optimizer and categorical cross-entropy loss, with IoU and F1 score metrics for evaluation. Early stopping was employed to mitigate overfitting, with the best model weights restored based on validation loss.
+Two U-Net models were implemented: a custom model and a ResNet34-based model, both following an encoder-decoder architecture with skip connections. The models were trained using the Adam optimizer and categorical cross-entropy loss, with IoU and F1 score metrics for evaluation. Early stopping was employed to mitigate overfitting, with the best model weights restored based on validation loss. 
+Note: Third column (prediction on test image) of the image is the result of CustomUnet and fourth column is the result of Unet-Resnet34
 ![alt text](https://github.com/gokceyagmurbudak/U-Net-Based-OBIA-/blob/main/img/result1.png)
 
 ### Results and Challenges
