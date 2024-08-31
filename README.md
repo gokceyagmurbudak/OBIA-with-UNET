@@ -4,6 +4,8 @@
 ### Project Overview
 This project focuses on the semantic segmentation of urban areas using high-resolution aerial raster images and urban atlas mask data for the city of Würzburg. The aerial images, sourced from Bayern Atlas, offer a detailed 0.4 cm resolution, providing a rich dataset for analysis. The urban atlas masks serve as ground truth, categorizing the city into different zones including continuous urban fabric, discontinuous urban fabric, commercial and industrial areas, transport zones, urban green spaces, and non-urban areas. The primary objective is to classify these zones accurately using deep learning models.
 
+![alt text](https://github.com/gokceyagmurbudak/U-Net-Based-OBIA-/blob/main/img/study_area.png)
+
 ### Data and Methodology
 The project leverages two main datasets: high-resolution aerial images and urban atlas masks. Prior to training, the datasets were preprocessed by resizing and extracting image patches. A colormap was applied to the grayscale masks to visualize different urban zones, and the masks were converted to a categorical format suitable for model training. The data was split into 80% training and 20% testing sets.
 
